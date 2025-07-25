@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional Portfolio Design System - Modern & Clean */
+
+@layer base {
+  :root {
+    /* Light theme - Professional blue palette */
+    --background: 220 15% 97%;
+    --foreground: 220 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 15%;
+
+    --primary: 210 100% 40%;
+    --primary-foreground: 0 0% 100%;
+    --primary-muted: 210 100% 95%;
+
+    --secondary: 220 15% 96%;
+    --secondary-foreground: 220 15% 25%;
+
+    --muted: 220 15% 95%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 200 100% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 210 100% 40%;
+
+    --radius: 0.75rem;
+
+    /* Portfolio specific colors */
+    --sidebar-bg: 220 25% 12%;
+    --sidebar-text: 220 15% 85%;
+    --sidebar-accent: 210 100% 50%;
+    --hero-gradient-start: 210 100% 40%;
+    --hero-gradient-end: 200 100% 45%;
+    --section-bg: 220 15% 98%;
+    --skill-progress: 210 100% 45%;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark theme - Professional portfolio */
+    --background: 220 25% 8%;
+    --foreground: 220 15% 90%;
+
+    --card: 220 25% 10%;
+    --card-foreground: 220 15% 90%;
+
+    --popover: 220 25% 10%;
+    --popover-foreground: 220 15% 90%;
+
+    --primary: 210 100% 50%;
+    --primary-foreground: 220 25% 8%;
+    --primary-muted: 210 100% 15%;
+
+    --secondary: 220 25% 15%;
+    --secondary-foreground: 220 15% 85%;
+
+    --muted: 220 25% 15%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 200 100% 55%;
+    --accent-foreground: 220 25% 8%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 25% 8%;
+
+    --border: 220 25% 20%;
+    --input: 220 25% 20%;
+    --ring: 210 100% 50%;
+
+    /* Dark theme portfolio colors */
+    --sidebar-bg: 220 30% 5%;
+    --sidebar-text: 220 15% 75%;
+    --sidebar-accent: 210 100% 60%;
+    --hero-gradient-start: 210 100% 45%;
+    --hero-gradient-end: 200 100% 50%;
+    --section-bg: 220 25% 10%;
+    --skill-progress: 210 100% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+/* Additional animations for professional portfolio */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px hsla(var(--primary), 0.3); }
+  50% { box-shadow: 0 0 30px hsla(var(--primary), 0.6); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px hsl(var(--primary) / 0.3); }
+  50% { box-shadow: 0 0 40px hsl(var(--primary) / 0.6); }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
